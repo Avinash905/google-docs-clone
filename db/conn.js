@@ -5,11 +5,7 @@ mongoose.set("strictQuery", false);
 
 const mongoconn = mongoose
   .connect(process.env.DB_URI)
-  .then(() => {
-    console.log("Db connection established");
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+  .then(() => {})
+  .catch((err) => {});
 
 export default mongoconn;

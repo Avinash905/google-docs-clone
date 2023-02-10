@@ -1,11 +1,16 @@
-const express = require("express");
+import express from "express";
 import { Server } from "socket.io";
 import mongoconn from "./db/conn.js";
 import { getDocument, updateDocument } from "./controller/controller.js";
-const cors = require("cors");
-const path = require("path");
+import cors from "cors";
 import * as dotenv from "dotenv";
 dotenv.config();
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+import path from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const port = process.env.PORT || 5000;
