@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;900;1000&family=Poppins:wght@300;500;700;900&family=Quicksand:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --background: rgb(242, 242, 242);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.ql-toolbar {
+  text-align: center;
+  box-shadow: 0 0 5px 0 rgb(96, 95, 95);
+  background-color: var(--background);
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.editor {
+  width: 60vw;
+  height: 100vh;
+  background-color: var(--background);
+  box-shadow: 0 0 5px 0 rgb(96, 95, 95);
+  margin: 1rem auto !important;
+}
